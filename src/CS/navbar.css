@@ -1,0 +1,96 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  top: 0;
+  left: 0; 
+  height: 50px;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 2px 1px 1px rgb(209, 206, 206);
+  
+  
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px; 
+}
+
+.nav-item {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  
+}
+
+.nav-link {
+  text-decoration: none;
+  position: relative;
+  color: white; 
+}
+
+.nav-link::after {
+  content: ''; 
+  position: absolute; 
+  bottom: -3px;
+  left: 0; 
+  width: 0; 
+  height: 2px; 
+  background-color: white; 
+  transition: width 0.4s ease; 
+}
+
+.nav-link:hover::after {
+  width: 100%; 
+  
+}
+
+.nav-link:hover {
+  color: rgb(253, 45, 45);
+  
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.mobile-menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none; 
+}
+
+/* Styles for Mobile Menu */
+@media only screen and  (max-width: 768px) {
+  .mobile-menu-icon {
+    display: block; 
+  }
+  
+
+  .nav-links {
+    display: none; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    width: 100%;
+    
+    background-color: rgb(22, 21, 21);
+    z-index: 999;
+  }
+
+  .nav-links.mobile-menu-open {
+    display: flex; 
+  }
+
+  .nav-item {
+    font-size: 30px;
+  }
+}
+
+
+
