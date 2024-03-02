@@ -13,7 +13,7 @@ const Navbar = () => {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+      element.scrollIntoView({ behavior: "smooth", block: "start"});
     }
    
     setIsMobileMenuOpen(false);

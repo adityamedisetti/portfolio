@@ -22,3 +22,6 @@ function App() {
 }
 
 export default App;
+
+
+// "homepage":"https://adityamedisetti.github.io/portfolio",

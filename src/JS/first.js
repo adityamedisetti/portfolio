@@ -204,8 +204,10 @@ window.addEventListener('scroll', handleScroll);
                 <svg width="100px" height="100px" xmlns="http://www.w3.org/2000/svg">
                   <defs>
                     <linearGradient id="gc" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stopColor="rgb(253, 45, 45)" />
-                      <stop offset="100%" stopColor="rgb(253, 45, 45)" />
+                      <stop offset="0%" stopColor="
+#EAEDED" />
+                      <stop offset="100%" stopColor="
+#EAEDED" />
                     </linearGradient>
                   </defs>
                   <circle
